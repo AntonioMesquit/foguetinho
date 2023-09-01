@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -8,5 +10,106 @@
 }
 body{
     background-image: url(old-paper-texture-beige-craft-cardboard-vintage-canvas-surface\ 1.png);
-    padding: ;
+    padding: 5.3rem 3.7rem 5.3rem 3.7rem;
+    height: 100vh;
+
+    font-family: 'Source Serif 4', serif;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.top {
+    margin-bottom: 3.4rem;
+    min-width: 30.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top h1 , .buttom h1{
+    color: #A54328;
+    font-size: 2.8rem;
+    font-weight: 700;
+  
+
+}
+.foto{
+    padding-block: 4.7rem;
+}
+.top p{
+    max-width: 31.5rem;
+    color: #A54328;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: normal;  
+}
+.buttom{
+    max-width: 30.8rem;
+    margin-bottom: 2.3rem;
+}
+.buttom h1{
+    margin-bottom: 3.6rem;
+}
+.p-text{
+font-size: 1.8rem;
+color: #A54328;
+font-weight: 700;
+}
+.ingredientes{
+    color: #A54328;
+    padding: 2rem;
+    margin-bottom: 1.7rem;
+}
+li{
+    font-size: 1.8rem;
+    font-weight: 600;
+    
+}
+.modo{
+    color: #A54328;
+    padding: 2rem;
+    margin-bottom: 1.7rem;
+}
+
+.butao{
+    text-decoration: none;
+    background-color: #A54328;
+    color: white;
+    padding: 1.13rem 1.13rem 1.13rem 1.13rem;
+    border-radius: 5px;
+
+}
+
+@media screen and (min-width:768px){
+    main{
+        display: flex;
+        gap: 18.0rem;
+    }
+    main{
+        margin-top: 9.7rem;
+    }
+    .top h1{
+        font-size: 4.0rem;
+    }
+    .foto{
+        padding: 0;
+        margin-block: 6.6rem;
+        width: 31.5rem;
+    }
+    .top p{
+        font-weight: 600;
+        width: 43.5rem;
+    }
+    .buttom h1{
+        font-size: 4rem;
+        
+    }
+    .ingredientes, .modo{
+        padding-top: 0;
+    } 
+   .top, .buttom{
+    max-width: 45rem;
+   }
 }
