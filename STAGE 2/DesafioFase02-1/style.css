@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Open+Sans:wght@300;400&display=swap');
+
+/*font-family: 'Mulish', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    font-family: 'Mulish', sans-serif;
+}
+li{
+    list-style: none;
+    color: #1F1534;
+    cursor: pointer;
+    
+}
+li:hover{
+    color: #1F1534;
+    font-weight: 700;
+}
+.list{
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+}
+main{
+    display: flex;
+    justify-content: center;
+   
+    width: 100%
+}
+.text-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    
+}
+.text p{
+    font-family: 'Open Sans', sans-serif;
+    width: 350px;
+    margin-top: 30px;
+    color: #7D7987;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.text-content h1{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 49px;
+    font-family: 'Mulish', sans-serif;
+    width: 489px;
+    font-weight: 400;
+}
+.tilt{
+    color: #89C5CC;
+    font-weight: 600;
+}
+.x{
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+
+}
+
+.butao{
+    background-color: #69B99D;
+    width: 179px;
+    height: 56px;
+    display: flex;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.text-content a{
+    color: white;
+    
+
+}
+.wpp{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.images{
+    width: 50%;
+}
+main{
+    margin-bottom: 70px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.b{
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000;
+}
+.balls{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

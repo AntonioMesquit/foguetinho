@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400&display=swap');
+
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+main{
+    width: 626px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.img2{
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+span{
+    color:#EE24FF;
+    font-weight: 700;
+}
+.text-content h1{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.text-content p{
+    color: #828282;
+    font-size: 15px;
+    width: 550px;
+}
+strong{
+    color: #3F3D56;
+}
+.flutuar{
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+.txt{
+    width: 30%;
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-top: 1px solid #ECEFF2;
+    align-items: center;
+
+}
+.mid{
+    margin-inline: 50px;
+}
+a{
+    text-decoration: none;
+    color: #3F3D56;
+    font-weight: bold;
+    font-size: 15px;
+}
+.onda{
+    width: 100%;
+    
+}

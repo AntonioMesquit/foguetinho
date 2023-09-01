@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ECE9FD;
+    padding: 60px 0px 0px 23px;
+    font-family: 'Epilogue', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #7158EF;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+.title-h1{
+    color: #090039;
+    width: 329px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+
+}
+.title-p{
+    color: rgba(10, 0, 57, 0.64);
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    width: 329px;
+    margin-bottom: 32px;
+}
+a{
+    text-decoration: none;
+    color: #090039;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+
+}
+.parte1{
+    margin-bottom: 72px;
+}
+.txt{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  
+}
+.number{
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 5rem;
+    margin-right: 38px;
+}
+.txt-h1{
+    width: 257px;
+}
+@media screen and (min-width:768px) {
+    main{
+        flex-direction: row;
+    }
+    .parte1,.parte2{
+        margin-bottom: 0;
+        padding: 5rem 0px 0px 8.4rem;
+    }
+   
+    .parte2{
+        margin-top: 50px;
+    }
+    .title-h1{
+        width: 484px;
+        margin-bottom: 31px;
+    }
+    .title-p{
+        width: 484px;
+    }
+    .txt-h1{
+        width: 300px;
+    }
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.image-1{
+    width: 348px;
+    height: 223px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+main{
+    width: 592px;
+    height: 284px;
+    margin-bottom: 100px;
+}
+.text h1{
+    font-size: 49px;
+    font-weight: 400;
+}
+.txt-header{
+    color: #FF9900;
+    font-size: 49px;
+    font-weight: 600;
+
+}
+.text{
+    text-align: center;
+}
+.amarelo{
+    color: #FF9900;
+}
+.text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.text p:nth-child(2){
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center
+
+    
+}
+.bls{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+.txt{
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 20px;
+border-top: 1px solid #ECEFF2;
+}
+.fale{
+    padding-left: 30px;
+}   
+a{
+    color: #FF9900;
+}
