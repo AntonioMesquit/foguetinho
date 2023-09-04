@@ -1,25 +1,13 @@
-.app{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
     display: grid;
     height: 100vh;
-    grid-template-areas:
-    "A A A"
-    "B B C"
-    "B B C"
-    "D D D";
-    }
-    div{
-        border: 1px solid blue;
-    }
-    .app div:nth-child(1){
-     grid-area: A;
-    }
-    .app div:nth-child(2){
-      grid-area: B;
-     
-    }
-    .app div:nth-child(3){
-        grid-area: C;
-    }
-    .app div:nth-child(4){
-        grid-area: D;
-    }
+    list-style: none;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 20px;
+}
