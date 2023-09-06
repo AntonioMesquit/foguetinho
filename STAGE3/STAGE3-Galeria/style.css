@@ -31,8 +31,18 @@ header{
     padding-inline: 11.2rem;
     padding-block: 1.6rem;
     margin-bottom: 3.6rem;
+    animation: move 0.3s forwards;
  
    
+}
+@keyframes move {
+    0%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0);
+
+    }
 }
 input{
     width: 100%;
@@ -59,6 +69,7 @@ ul{
 }
 main{
     padding-inline: 12rem;
+   
 }
 main h1{
     margin-bottom: 3.6rem;
@@ -73,20 +84,50 @@ main h1{
   
 }
 .box{
-    width: 39rem;
-    height: 28rem;
+  
     background-color: #ffffff7b;
     border-bottom-left-radius: 1rem ;
     border-bottom-right-radius: 1rem ;
+    overflow: hidden; 
+    position: relative;
+    opacity: 0;
+   
+   
+  
 }
+
 .boxs img{
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    width: 100%;
+    position: relative;
+ 
+
+   
+}
+@keyframes parecer {
+    0%{
+        opacity: 0;
+        transform: translateX(-30%)
+        
+        
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.boxs img:hover {
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+    transform: scale(1.1) rotate(-2deg);
+
 }
 .text-content{
    max-width: 25rem;
    font-size: 1.8rem;
    padding: 1.2rem;
+   
 }
 .text-content p:nth-child(2){
     margin-top: 0.8rem;

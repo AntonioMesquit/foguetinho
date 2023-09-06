@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+:root{
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+    --color-azul: #065E7C;
+    --background: rgba(255, 255, 255, 0.20);
+    --footer: #387E96;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+}
+.card{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+header{
+    background-color: var(--color-azul);
+    padding: 1.2rem 11.2rem;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    gap: 4.7rem;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 4.4rem;
+    
+
+}
+.foto{
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+form{
+    width: 100%;
+    font-family: 'Mulish', sans-serif;
+}
+.inpue{
+    width: 100%;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    background-color: var(--background);
+    border: none;
+    font-family: 'Mulish', sans-serif;
+    
+}
+::placeholder{
+    color: white;
+}
+main{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    margin-left: 10.9rem;
+    margin-right: 11rem;
+    gap: 3.4rem;
+    justify-content: center;
+}
+
+.artigos{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+.artigos h1{
+
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 800;
+line-height: 160%;
+}
+.likes{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 3.2rem;
+}
+.likes h1{
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 700;
+line-height: 160%; 
+}
+.txt{
+    display: block;
+}
+.txt p{
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 400;
+line-height: 160%;
+margin-bottom: 2rem; 
+}
+
+
+.principal p{
+    max-width: 80rem;
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+   
+}
+.like,.deslike{
+    background-color: var(--color-azul);
+    padding: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: var(--footer);
+    padding-block: 1.6rem;
+    text-align: center;
+}
+footer p{
+color: #FFF;
+text-align: center;
+
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.box{
+    display: flex;
+    max-width: 34rem;
+    gap: 1.6rem;
+    align-items: center;
+    
+}
+.box h1{
+ font-size: 1.4rem;
+font-style: normal;
+font-weight: 700;
+line-height: 160%; 
+}
+.box img{
+   height: 8.4rem;
+}
+.box p{
+font-size: 1.2rem;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; 
+}
