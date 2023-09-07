@@ -14,7 +14,6 @@
 height: 100vh;
 display: grid;
 grid-template-rows: max-content max-content max-content max-content;
-justify-content: center;
 }
 
 header{
@@ -56,8 +55,7 @@ header{
     }
 }
 .astronauta{
-    width: 100%;
-    height: auto;
+    margin-bottom: 10rem;
     animation: astro 1s forwards;
 }
 @keyframes astro {
@@ -327,7 +325,8 @@ line-height: normal;
  }
  @media screen and (max-width:1050px){
  .astronauta{
-    max-width: 36.4rem;
+    width: 100%;
+    height: auto;
     margin-bottom: 4rem;
 
  }
@@ -377,9 +376,7 @@ line-height: normal;
  }
  }
  @media screen and (max-width:550px){
-    header,main,.main2{
-        width: 30rem;
-    }
+
     .text-box p{
         font-size: 1rem
     }
