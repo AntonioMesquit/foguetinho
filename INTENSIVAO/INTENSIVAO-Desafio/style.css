@@ -94,6 +94,20 @@ main{
     display: flex;
     gap: 6rem;
     padding: 6.4rem 11rem;
+    opacity: 0;
+}
+main.rolagem{
+    opacity: 1;
+ 
+}
+main.rolagem .box-content .box:nth-child(1){
+    animation: par 1s forwards;
+}
+main.rolagem .box-content .box:nth-child(2){
+    animation: mid 1s forwards;
+}
+main.rolagem .box-content .box:nth-child(3){
+    animation: ult 1s forwards;
 }
 .junto{
     display: flex;
@@ -123,6 +137,12 @@ line-height: normal;
     display: flex;
     gap: 6rem;
 }
+::-webkit-scrollbar{
+    width: 0;
+  
+}
+
+
 .box{
     max-width: 52.2rem;
     height: 48.4rem;
@@ -219,22 +239,41 @@ line-height: 100%;
     border: none;
     outline: none;
     color: white;
-    animation: parec 1.8s forwards;
-
 font-size: 1.4rem;
 font-style: normal;
 font-weight: 700;
 line-height: 2.4rem; 
 text-transform: capitalize;
 margin-bottom: 10.4rem;
+
  }
  .main2{
     display: flex; 
     width: 100%;
     gap: 10.8rem;
+    opacity: 0;
  
     
  }
+.main2.rolagem{
+    opacity: 1;
+ }
+ .main2.rolagem .part1 h1{
+    animation: parec 1.4s  forwards;
+ }
+ .main2.rolagem .part1 .input-container:nth-child(1){
+    animation: parec 1.8s forwards;
+ }
+ .main2.rolagem .part1 .input-container:nth-child(2){
+    animation: parec 2.3s forwards
+ }
+ .main2.rolagem .part1 .input-container:nth-child(3){
+    animation: parec 2.6s forwards
+ }
+ .main2.rolagem .part1 .but {
+    animation: parec 1.8s forwards;
+ }
+
  .part1{
     width: 50%;
     padding-left: 10.9rem;
