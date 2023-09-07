@@ -32,8 +32,18 @@ header{
     gap: 4.7rem;
     font-family: 'Mulish', sans-serif;
     margin-bottom: 4.4rem;
+    animation: aparecer 1s forwards;
     
-
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .foto{
     background-color: white;
@@ -52,14 +62,16 @@ form{
     font-family: 'Mulish', sans-serif;
     
 }
+.box-foto{
+    width: 100%;
+}
 ::placeholder{
     color: white;
 }
 main{
     display: grid;
     grid-template-columns: max-content max-content;
-    margin-left: 10.9rem;
-    margin-right: 11rem;
+
     gap: 3.4rem;
     justify-content: center;
 }
@@ -68,6 +80,19 @@ main{
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+  
+}
+@keyframes artigos {
+    0%{
+        transform: scale(0.7);
+        transform: translateX(50%);
+        opacity: 0;
+    }
+ 
+    100%{
+        transform: scale(1);
+        transform: translateX(0);
+    }
 }
 .artigos h1{
 
@@ -76,9 +101,11 @@ font-style: normal;
 font-weight: 800;
 line-height: 160%;
 }
+
 .likes{
     display: flex;
     justify-content: space-between;
+    max-width: 80.4rem;
     margin-block: 3.2rem;
 }
 .likes h1{
@@ -87,9 +114,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 160%; 
 }
-.txt{
-    display: block;
-}
+
 .txt p{
 font-size: 1.6rem;
 font-style: normal;
@@ -114,11 +139,36 @@ margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+.like:hover{
+    animation: rodar 1s forwards ease;
+}
+.deslike:hover{
+    animation: rodar 1s forwards ease;
+}
+@keyframes rodar {
+    0%{
+     transform: rotate(0deg);
+    }
+   100%{
+    transform: rotate(360deg);
+   }
 }
 footer{
     background-color: var(--footer);
     padding-block: 1.6rem;
     text-align: center;
+    animation: cima 1s forwards
+}
+@keyframes cima{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 footer p{
 color: #FFF;
@@ -144,10 +194,50 @@ line-height: 160%;
 }
 .box img{
    height: 8.4rem;
+   width: 100%;
 }
 .box p{
 font-size: 1.2rem;
 font-style: normal;
 font-weight: 400;
 line-height: 160%; 
+}
+@media screen and (max-width:768px){
+    header{
+        padding: 1.2rem 2.8rem;
+    }
+}
+@media screen and (max-width:1200px){
+    header{
+        margin-bottom: 0px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .likes, .txt{
+        padding-inline: 2.4rem;
+    }
+    
+    .principal{
+        width: 100%;
+     
+    }
+    @keyframes prin{
+
+    }
+    .box-foto{
+   
+    }
+    .fotoe{
+        width: 100%;
+    
+    }
+    .likes h1{
+        font-size: 1.8rem;
+    }
+    footer{
+        margin-top: 3rem;
+    }
 }
