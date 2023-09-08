@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus timer v2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer type="module"></script>
+    <link rel="shortcut icon" href="assets/ph_pause-circle.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="day-night-mode">
+        <img src="assets/ph_sun-bold.svg" alt="" class="sol">
+        <img src="assets/ph_moon-bold.svg" alt="" class="lua">
+    </div>
+    <div class="card">
+       <h1><span id="minutes">00</span>:<span id="seconds">00</span></h1>
+       <div id="icons">
+        <div class="icon-play">
+           
+            <img data-action="toggleRunning" src="assets/ph_play-circle.svg" alt="" class="play">
+            
+        </div>
+        <div class="icon-pause">
+            <img data-action="toggleRunning" data-action="toggleRunning" src="assets/ph_pause-circle.svg" alt="" class="pause">
+        </div>
+        <div class="icon-timer">
+            <img data-action="set"src="assets/ph_timer.svg" alt="" class="timer">
+        </div>
+        <div class="icon-stop">
+            <img data-action="reset" src="assets/ph_stop-circle.svg" alt="" class="stop">
+        </div>
+        <div class="icon-speaker">
+            <img data-action="ToggleMusic"src="assets/ph_speaker-none.svg" alt="" class="spaeker-on">
+        </div>
+        <div class="icon-speakeriof">
+            <img data-action="ToggleMusic" src="assets/ph_speaker-high.svg" alt="" class="speaker-of">
+        </div>
+       </div>
+    </div>
+</body>
+</html>

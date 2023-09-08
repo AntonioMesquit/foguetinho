@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    --background : #121214;
+    --h1: #F8F8FC;
+    --icons: #242424;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html.active{
+    --background: #fff;
+    --h1:#121214;
+}
+html.active .day-night-mode .lua{
+    display: block;
+    
+}
+html.active .day-night-mode .sol{
+    display: none;
+    
+}
+html.musicof .spaeker-on{
+    display: none;
+}
+html.musicof .speaker-of{
+    display: block;
+}
+
+body {
+    background-color: var(--background);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 35rem;
+
+}
+.card h1 {
+    color: var(--h1);
+    text-align: center;
+
+    font-size: 9.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.day-night-mode{
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+}
+.day-night-mode .lua{
+    display: none;
+}
+
+.pause, .stop, .speaker-of{
+    display: none;
+}
+html.running .pause, html.running .stop{
+    display: block;
+
+}
+html.running .play , html.running .timer{
+    display: none;
+}
+
+#icons {
+ 
+    display: flex;
+    justify-content: space-between;
+    border-radius: 9999px;
+    background: var(--icons);
+    padding: 2.2rem 4rem;
+    align-items: center;
+    gap: 1.6rem;
+}
