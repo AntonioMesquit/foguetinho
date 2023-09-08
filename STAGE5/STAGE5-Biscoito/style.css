@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+:root {
+    font-size: 62.5%
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    background-color: #fff;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+    border-radius: 0.5rem;
+    width: 40rem;
+
+}
+
+.sorte {
+    display: flex;
+    padding: 4.8rem 6.4rem;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+    max-width: 42.8rem;
+    background-color: #fff;
+    display: none;
+    border-radius: 0.5rem;
+}
+
+.sorte h1 {
+    color: #34355B;
+    text-align: center;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sorte-biscoito {
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    gap: 1.7rem;
+}
+
+.sorte-biscoito p {
+    color: #000;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1rem;
+}
+body.active .sorte-biscoito{
+animation: text 1s forwards;
+}
+@keyframes text {
+    0%{
+        opacity: 0;
+        transform:   translateY(300%) scale(0)
+        scale(0)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1)
+    
+    }
+    
+}
+.biscoit {
+    margin-bottom: 6.7rem;
+}
+
+.but {
+    border-radius: 4px;
+    background: #FF9500;
+    padding: 1.6rem;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    outline: none;
+}
+
+.card h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card p {
+    color: #34355B;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1.4rem;
+    margin-bottom: 2.6rem;
+    
+}
+body.active .card{
+    display: none;
+}
+
+body.active .sorte{
+    display: block;
+    text-align: center;
+    
+}
+body.active .sorte h1{
+    margin-bottom: 1rem;
+   text-align: center;
+   
+}
+body.active .sorte p{
+    margin-bottom: 4rem;
+  
+   
+}
+
+
+
+.biscoito {
+    cursor: pointer;
+    
+}
+.biscoito:hover{
+    animation: vibracao 1s infinite;
+}
+@keyframes vibracao {
+    0% {
+      transform: translate(-5px, -5px);
+    }
+    10% {
+      transform: translate(5px, 5px);
+    }
+    20% {
+      transform: translate(-5px, -5px);
+    }
+    30% {
+      transform: translate(5px, 5px);
+    }
+    40% {
+      transform: translate(-5px, -5px);
+    }
+    50% {
+      transform: translate(5px, 5px);
+    }
+    60% {
+      transform: translate(-5px, -5px);
+    }
+    70% {
+      transform: translate(5px, 5px);
+    }
+    80% {
+      transform: translate(-5px, -5px);
+    }
+    90% {
+      transform: translate(5px, 5px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  } 
+  @media screen and (max-width: 430px){
+    .card{
+        width: 30rem;
+    }
+    .biscoito{
+        width: 100%;
+    }
+    .sorte{
+        width: 70%;
+        box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+    }
+    .biscoit{
+        width: 100%;
+    }
+  }
