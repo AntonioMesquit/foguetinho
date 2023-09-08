@@ -1,7 +1,7 @@
 const but = document.querySelector(".butao");
 const button = document.querySelector(".button");
 const body = document.querySelector("body")
-let num = 0;
+let num = 1;
 
 but.addEventListener('click' , function(e){
 
@@ -26,8 +26,11 @@ but.addEventListener('click' , function(e){
     num++
     break
    }
-    
 }
-  
+})
+button.addEventListener('click' , function(e){
+    e.preventDefault();
+    num = 0;
+    body.classList.remove("active")
 })
 
