@@ -329,9 +329,10 @@ line-height: normal;
     height: auto;
     margin-bottom: 4rem;
 
- }
+
  header{
     padding: 0;
+  
     align-items: center;
     justify-content: center;
     flex-direction: column-reverse;

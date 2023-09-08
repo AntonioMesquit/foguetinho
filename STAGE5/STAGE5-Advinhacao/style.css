@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+:root{
+font-size: 62.5%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: linear-gradient(288deg, #C2E9FB 0%, #A1C4FD 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    background-color: white;
+    border-radius: 0.6rem;
+}
+.card h1{
+color: #34355B;
+
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 1.6rem;
+}
+.card p{
+color: rgba(52, 53, 91, 0.80);
+text-align: center;
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+margin-bottom: 4.6rem;
+}
+.text-1{
+    border: none;
+    width: 5.0rem;
+    height: 5.3rem;
+    padding: 1.6rem;
+    background-color: #DCE2E9;
+    border-radius: 4px 0px 0px 4px;
+    outline: none;
+}
+form{
+    display: flex;
+    justify-content: center;
+
+}
+.butao{
+    border: none;
+    outline: none;
+    background-color: #7879F1;
+    padding: 1.6rem;
+    border-radius: 0px 4px 4px 0px;
+}
+.result{
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    background-color: white;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 0.6rem;
+    display: none;
+
+}
+span{
+    margin-right: 1rem;
+}
+button{
+    cursor: pointer;
+}
+.result h1{
+color: #34355B;
+text-align: center;
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+margin-bottom: 3.3rem;
+}
+.number{
+    margin-right: 0.5rem;
+}
+body.active .card{
+    display: none;
+    }
+body.active .result{
+        display: block;
+        }
+.button{
+    background-color: #7879F1;
+    border: none;
+    outline: none;
+    padding: 1.6rem;
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
