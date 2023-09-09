@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrelas</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #E1E1E6;
+    font-family: Roboto;
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    margin-bottom: 1.6rem;
+}
+
+p {
+ color: #E1E1E6;
+font-family: Roboto;
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /
+}
+.card{
+    max-width: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 200px);
+    margin-left: 20rem;
+    animation: tex 1s forwards;
+    
+}
+@keyframes tex {
+    0%{
+        opacity: 0;
+        transform: translateX(-300%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    
+}
+@media screen and (max-width:1050px){
+    .card{
+        margin-left: 7rem;
+        max-width: 40rem;
+    }
+    .card h1{
+        font-size: 3.8rem;
+    }
+    .card p{
+        font-size: 1.3rem;
+    }
+    .card{
+        margin-left: 1rem;
+    }
+}
+  </style>
+</head>
+<body>
+<div class="card">
+<h1>O Universo</h1>
+<p>A palavra Universo deriva do latim universum. A palavra latina foi usada por Cícero e posteriormente por outros autores com o mesmo sentido que é empregada atualmente. A palavra latina é derivada da contração poética unvorsum — utilizada primeiramente por Lucrécio no Livro IV de seu “Sobre a Natureza das coisas” — que conecta un, uni (um) com vorsum, versum (que significa "algo rodado, rolado ou mudado").
+</p>
+</div>
+    
+</body>
+</html>

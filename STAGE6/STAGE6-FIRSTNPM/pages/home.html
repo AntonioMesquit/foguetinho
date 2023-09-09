@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrelas</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    background-image: url(assets/mountains-universe-1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+header{
+    padding-block: 4.2rem;
+    padding-left: 7.2rem;
+    
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+nav a{
+display: flex;
+padding: 0px 1.8rem;
+text-decoration: none;
+color: #C4C4CC;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10.8rem;
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.1rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 400px);
+}
+main h1{
+color: #E1E1E6;
+
+font-size: 4.8rem;
+font-style: normal;
+font-weight: 600;
+line-height: 125%; 
+margin-bottom: 2.4rem;
+}
+.bot{
+display: flex;
+padding: 1.2rem 3.2rem;
+justify-content: center;
+align-items: center;
+gap: 0.8rem;
+text-decoration: none;
+color: white;
+text-align: center;
+font-size: 1.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.4rem; 
+text-transform: uppercase;
+
+border-radius: 5px;
+border: 2px solid #FFF;
+transition: 0.5s;
+}
+.bot:hover{
+    transition: 0.5s;
+    background: #FFF;
+    color: #02799D;
+}
+@media screen and (max-width: 800px){
+    main{
+    
+    height: calc(100vh - 200px);
+}
+}
+@keyframes text {
+    0%{
+        opacity: 0;
+        transform: translateY(-500%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+h1{
+    animation: text 1s forwards;
+}
+@keyframes but {
+    0%{
+        opacity: 0;
+        transform: translateY(500%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.bot{
+    animation: but 1s forwards;
+}
+@media screen and (max-width:550px){
+    main h1{
+        font-size: 3.2rem;
+    }
+}
+</style>
+<body>
+
+    
+    <main>
+        <h1>Explore o universo</h1>
+        <a href="/universe" class="bot" onclick="route()" >QUERO SABER MAIS</a>
+    </main>
+    
+</body>
+</html>

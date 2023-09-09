@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    transition: 0.5s;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header{
+    padding-block: 4.2rem;
+    padding-left: 7.2rem;
+    display: flex;
+    align-items: center;
+    
+
+}
+.imge{
+    margin-right: 1rem;
+}
+.menu-desktop{
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+nav a{
+display: flex;
+padding: 0px 1.8rem;
+text-decoration: none;
+color: #C4C4CC;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10.8rem;
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.1rem;
+}
+html.home body{
+    background-image: url(pages/assets/home.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+html.universe body{
+    background-image: url(pages/assets/universe.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+html.home .homes{
+    color: #fff;   
+    font-weight: bold;
+   }
+
+html.universe .universes{
+    color: #FFF;
+    font-weight: bold;
+}
+html.exploration .explorations{
+    color: #fff;
+    font-weight: bold;
+}
+.burguer{
+    display: none;
+}
+.bug{
+    display: none;
+}
+html.exploration body{
+    background-image: url(pages/assets/ult1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.close-svg{
+    display: none;
+}
+.menu-svg, .close-svg{
+   padding-right: 6rem;
+}
+@media screen and (max-width: 750px){
+    .bug{
+        display: block;
+        z-index: 1;
+    }
+    .burguer{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        right: 0;
+        
+        
+        position: absolute;
+       }
+       .bug .burguer{
+        display: none;
+       }
+       .bug.active .burguer{
+        
+        display: flex;
+        height: 20vh;
+        margin-top: 3rem;
+        
+       }
+       .bug.active .close-svg{
+        
+        animation: rotate 1s forwards;
+        display: block;
+        
+       }
+       @keyframes rotate {
+        0%{
+            transform: rotate(0deg);
+        }
+     
+        100%{
+            transform: rotate(720deg);
+        }
+        
+       }
+       .bug.active .menu-svg{
+        display: none;
+       }
+       .bug.active .burguer{
+        
+       }
+       
+
+       @keyframes as {
+        0%{
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+       }
+    
+   .menu-desktop{
+    display: none;
+   }
+  
+   header{
+    justify-content: space-between;
+   }
+
+}
