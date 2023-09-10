@@ -1,0 +1,156 @@
+@import "compass/css 3";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  transition: .5;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+body{
+  height: 100vh;
+}
+.container {
+  max-width: 980px;
+  margin: auto;
+  padding: 2.2449%;
+}
+
+.projects {
+  list-style: none;
+  padding: 0;
+  margin: 0 -2.2449%;
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.projects li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 45px 2.2449% 0 2.3469%;
+  width: 20.4082%;
+}
+a img{
+  width: 100%;
+}
+.projects a {
+  text-decoration: none;
+  color: #888;
+  display: block;
+  font-size: 16px;
+}
+
+.projects a img {
+  display: block;
+  max-width: 100%;
+  height: auto !important;
+}
+
+.project-label {
+  display: block;
+  margin: 5px 0 10px; 
+}
+
+.current a {
+  color: #000;
+}
+
+.current a:after {
+  content: "";
+  display: table;
+  border: 10px solid;
+  border-top: none;
+  border-color: #333 transparent;
+  margin: auto;
+}
+
+.current a img,
+.current .project-label {
+  transform: scale(1.0);
+}
+
+.current .project-label {
+  transform: translateY(10px);
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.details {
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  background: #444;
+  box-shadow: inset 0 10px 20px 5px #333;
+  color: #ddd;
+  right: 2.2449%;
+  left: 2.2449%;
+  padding: 20px;
+}
+
+.details img {
+  float: right;
+  margin-left: 20px;
+  width: 53.1915%;
+  height: auto !important;
+}
+
+.details .text {
+  overflow: hidden;
+}
+
+ul li.current:nth-child(5) .details{
+top: 20%;
+}
+ul li.current:nth-child(6) .details{
+  top: 20%;
+}
+ul li.current:nth-child(7) .details{
+  top: 20%;
+}
+ul li.current:nth-child(8) .details{
+  position: absolute;
+  top: 20%;
+}
+
+@media only screen and (max-width: 735px) {
+  .container {
+    padding: 3.0068%;
+  }
+
+  .projects {
+    margin: 0 -3.0068%;
+  }
+
+  .projects li {
+    margin: 45px 3.0068% 0 3.1298%;
+    width: 27.2109%;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .container {
+    padding: 4.4898%;
+  }
+
+  .projects {
+    margin: 0 -4.4898%;
+  }
+
+  .projects li {
+    margin: 45px 4.4898% 0 4.6939%;
+    width: 40.8163%;
+  }
+
+  .details img {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+}

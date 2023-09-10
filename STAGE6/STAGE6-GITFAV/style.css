@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --ff-primary : 'Poppins', sans-serif;
+    --text-color: #303030;
+    --hue : 194;
+    --primary-color: hsl(var(--hue), 100%, 63%)
+}
+body{
+    font-family: var(--ff-primary);
+    color: var(--text-color);
+    background-color: rgba(247, 251, 255, 0.614);
+  
+    
+}
+button{
+    background-color: var(--primary-color)
+    ;
+}
+#app{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 2.5rem 0;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    height: 3.2rem;
+    border: 1px solid #ccc;
+    border-radius: .4rem 0 0 .4rem;
+    padding: 0 .8re,;
+}
+.search button{
+    background-color: var(--primary-color);
+    border-radius: 0 .4rem .4rem 0;
+    height: 3.2rem;
+    border: none;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+.search button:hover{
+    filter: brightness(1.1);
+    }
+table{
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+}
+table * {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+table th{
+    background-color: var(--primary-color);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.5rem;
+    text-align: left;
+    
+}
+table tr{
+    background-color: #eee;
+}
+table tr:nth-child(odd){
+    background-color: #ddd;
+}
+table th:first-child{
+    border-top-left-radius: .4rem;
+
+}
+table td{
+    padding: 1.5rem;
+}
+td.user a{
+    text-decoration: none;
+}
+td.user a p{
+    font-weight: bold;
+}
+td.user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+table th:last-child{
+    border-top-right-radius: .4rem;
+}
+.followers{
+    padding-left: 3rem;
+}
+.repositories{
+    padding-left: 5rem;
+}
+td.user img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.remove {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+header{
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+#app{
+    padding: 0;
+}
+table{
+    width: 10%;
+}
+}
